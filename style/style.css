@@ -1,0 +1,26 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sankofa+Display&display=swap');
+
+/* font-family: "Sankofa Display", sans-serif; */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+
+/* 
+-------------------- Header Section ------------------------
+*/
+.header-section{
+    width: 100%;
+    height: 300px;
+    background-image: url("../assets/images/cover\ background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
