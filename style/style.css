@@ -12,15 +12,139 @@
     scroll-behavior: smooth;
 }
 
+body{
+    /* background-color: #fff9f4; */
+}
+
+
+:root{
+    --p-color:rgb(62, 62, 62);
+    --dark-color: rgb(54, 57, 88);
+}
+
 
 /* 
 -------------------- Header Section ------------------------
 */
 .header-section{
     width: 100%;
-    height: 300px;
+    height: 250px;
     background-image: url("../assets/images/cover\ background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    position: relative;
+}
+
+.header-section .logo{
+    height: 40%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* 
+----------------------- Hero Section --------------------------
+*/
+.hero-section{
+    max-width: 1400px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+}
+
+
+.profile{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+    /* box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px; */
+    position: absolute;
+    bottom: -90px;
+    left: 30px;
+}
+
+.profile img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: scale(1.2);
+    filter: brightness(110%);
+}
+
+
+/* 
+----------------------- Main Section -------------------------
+*/
+.main-section{
+    max-width: 1400px;
+    margin: 100px auto 30px;
+    padding: 30px;
+}
+
+.project-section{
+    width: 100%;
+}
+
+.project-section h1{
+    margin: 30px 0;
+}
+
+.project-container{
+    width: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.project-item{
+    width: 100%;
+    height: 400px;
+    background: white;
+    padding: 5px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    position: relative;
+    transition: all .40s ease;
+}
+
+.project-item a{
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.426);
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+.project-img{
+    width: 100%;
+    height: 100%;
+}
+
+.project-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.project-info{
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    display: none;
+}
+
+.project-item:hover a{
+    display: block;
+}
+
+.project-item:hover .project-info{
+    display: block;
 }
